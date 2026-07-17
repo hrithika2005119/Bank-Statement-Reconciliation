@@ -23,7 +23,6 @@ This project is an automated **Bank Statement Reconciliation System** developed 
 - Streamlit (for web interface)  
 - Matplotlib / Seaborn (for visualization)
 
-- 
 ---
 
 ## ⚙️ How It Works
