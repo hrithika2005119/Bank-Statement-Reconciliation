@@ -1,47 +1,85 @@
-# 🏦 Bank Statement Reconciliation System
+Bank Statement Reconciliation using Machine Learning
+📌 Overview
 
-## 📌 Overview
-This project is an automated **Bank Statement Reconciliation System** developed using Python and Machine Learning. It helps in matching and verifying financial transactions between bank statements and internal records, reducing manual effort and errors.
+The Bank Statement Reconciliation using Machine Learning project automates the process of matching bank statement transactions with company ledger records. It minimizes manual effort, reduces reconciliation errors, and improves efficiency by combining Machine Learning and RapidFuzz-based fuzzy matching.
 
----
+🚀 Features
+Upload Bank Statement and Company Ledger datasets (CSV)
+Automatic transaction reconciliation
+Fuzzy text matching using RapidFuzz
+Machine Learning-based transaction classification
+Interactive dashboard with reconciliation insights
+Search and filter transactions
+Reconciliation history tracking
+Export reconciliation reports as CSV
+Confidence score for matched transactions
+🛠️ Technologies Used
+Programming Language: Python
+Frontend: Streamlit
+Development Platform: Google Colab, VS Code
+Libraries: Pandas, NumPy, Scikit-learn, RapidFuzz, Joblib, Matplotlib
+Machine Learning Algorithm: Random Forest Classifier
+📂 Project Structure
+Bank-Statement-Reconciliation/
+│
+├── app.py
+├── train_model.py
+├── desc_encoder.pkl
+├── fraud_model.pkl
+├── type_encoder.pkl
+├── requirements.txt
+│
+├── data/
+│   ├── bank_transactions.csv
+│   ├── company_transactions.csv
+│
+│
+└── README.md
+⚙️ Workflow
+Upload bank statement and company ledger datasets.
+Perform data preprocessing (cleaning, formatting, duplicate removal).
+Generate features such as amount difference, date difference, and text similarity.
+Calculate transaction similarity using RapidFuzz.
+Train and evaluate the Random Forest Classifier.
+Predict matched and unmatched transactions.
+Display reconciliation results on the Streamlit dashboard.
+Export reconciliation reports.
+🤖 Machine Learning
+Algorithm: Random Forest Classifier
+Features Used:
+Amount Difference
+Date Difference
+Transaction Description Similarity (RapidFuzz)
+Model Accuracy: 95%
+📊 Modules
+Home
+User Profile
+Data Upload
+Dashboard
+Reconciliation Engine
+Insights
+History
+Search & Filter
+Reports & Export
+▶️ Installation
+git clone https://github.com/hrithika2005119/Bank-Statement-Reconciliation.git
 
-## 🚀 Features
-- ✅ Automated transaction matching  
-- ✅ Detects mismatches and missing entries  
-- ✅ Supports CSV/Excel file processing  
-- ✅ Data preprocessing and cleaning using Pandas  
-- ✅ Machine Learning-based classification (if used)  
-- ✅ User-friendly interface (Streamlit, if used)  
+cd Bank-Statement-Reconciliation
 
----
+pip install -r requirements.txt
 
-## 🛠️ Technologies Used
-- Python  
-- Pandas  
-- NumPy  
-- Scikit-learn (for ML model)  
-- Streamlit (for web interface)  
-- Matplotlib / Seaborn (for visualization)
-
----
-
-## ⚙️ How It Works
-1. Upload bank statement and internal transaction data  
-2. Data is cleaned and preprocessed  
-3. Transactions are matched based on rules/ML model  
-4. Mismatches and missing records are identified  
-5. Results are displayed with insights  
-
----
-
-## ▶️ Installation & Setup
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/your-username/bank-reconciliation.git
-cd bank-reconciliation
 streamlit run app.py
+📈 Future Enhancements
+Real-time Bank API integration
+Deep Learning-based transaction matching
+Fraud detection module
+Multi-user authentication
+Cloud deployment with database support
+👩‍💻 Author
 
----
+Hrithika V
+B.Sc. Computer Science (Artificial Intelligence & Data Science)
 
-## 📂 Project Structure
+📄 License
+
+This project is developed for academic and educational purposes.
