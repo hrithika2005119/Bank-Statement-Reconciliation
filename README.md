@@ -1,85 +1,146 @@
-Bank Statement Reconciliation using Machine Learning
-📌 Overview
+# Bank Statement Reconciliation using Machine Learning
 
-The Bank Statement Reconciliation using Machine Learning project automates the process of matching bank statement transactions with company ledger records. It minimizes manual effort, reduces reconciliation errors, and improves efficiency by combining Machine Learning and RapidFuzz-based fuzzy matching.
+## 📌 Overview
 
-🚀 Features
-Upload Bank Statement and Company Ledger datasets (CSV)
-Automatic transaction reconciliation
-Fuzzy text matching using RapidFuzz
-Machine Learning-based transaction classification
-Interactive dashboard with reconciliation insights
-Search and filter transactions
-Reconciliation history tracking
-Export reconciliation reports as CSV
-Confidence score for matched transactions
-🛠️ Technologies Used
-Programming Language: Python
-Frontend: Streamlit
-Development Platform: Google Colab, VS Code
-Libraries: Pandas, NumPy, Scikit-learn, RapidFuzz, Joblib, Matplotlib
-Machine Learning Algorithm: Random Forest Classifier
-📂 Project Structure
+The **Bank Statement Reconciliation using Machine Learning** project automates the reconciliation process by matching bank statement transactions with company ledger records. It combines **Machine Learning** and **RapidFuzz-based fuzzy matching** to reduce manual effort, improve accuracy, and speed up financial reconciliation.
+
+---
+
+## 🚀 Features
+
+* Upload bank statement and company ledger CSV files
+* Automated transaction matching
+* Fuzzy text matching using RapidFuzz
+* Machine Learning-based reconciliation
+* Interactive Streamlit dashboard
+* Search and filter transactions
+* Confidence score for matched transactions
+* Reconciliation history tracking
+* Export reconciliation reports as CSV
+
+---
+
+## 🛠️ Technologies Used
+
+* **Programming Language:** Python
+* **Frontend:** Streamlit
+* **Development Tools:** Google Colab, VS Code
+* **Libraries:** Pandas, NumPy, Scikit-learn, RapidFuzz, Joblib, Matplotlib
+* **Machine Learning Algorithm:** Random Forest Classifier
+
+---
+
+## 📂 Project Structure
+
+```text
 Bank-Statement-Reconciliation/
-│
+
 ├── app.py
 ├── train_model.py
-├── desc_encoder.pkl
 ├── fraud_model.pkl
+├── desc_encoder.pkl
 ├── type_encoder.pkl
 ├── requirements.txt
 │
 ├── data/
 │   ├── bank_transactions.csv
-│   ├── company_transactions.csv
-│
+│   └── company_transactions.csv
 │
 └── README.md
-⚙️ Workflow
-Upload bank statement and company ledger datasets.
-Perform data preprocessing (cleaning, formatting, duplicate removal).
-Generate features such as amount difference, date difference, and text similarity.
-Calculate transaction similarity using RapidFuzz.
-Train and evaluate the Random Forest Classifier.
-Predict matched and unmatched transactions.
-Display reconciliation results on the Streamlit dashboard.
-Export reconciliation reports.
-🤖 Machine Learning
-Algorithm: Random Forest Classifier
-Features Used:
-Amount Difference
-Date Difference
-Transaction Description Similarity (RapidFuzz)
-Model Accuracy: 95%
-📊 Modules
-Home
-User Profile
-Data Upload
-Dashboard
-Reconciliation Engine
-Insights
-History
-Search & Filter
-Reports & Export
-▶️ Installation
+```
+
+---
+
+## ⚙️ Workflow
+
+1. Upload bank statement and company ledger datasets.
+2. Clean and preprocess transaction data.
+3. Generate features such as amount difference, date difference, and description similarity.
+4. Calculate text similarity using RapidFuzz.
+5. Train and evaluate the Random Forest Classifier.
+6. Predict matched and unmatched transactions.
+7. Display reconciliation insights on the Streamlit dashboard.
+8. Export reconciliation reports.
+
+---
+
+## 🤖 Machine Learning
+
+**Algorithm:** Random Forest Classifier
+
+**Features Used:**
+
+* Amount Difference
+* Date Difference
+* Transaction Description Similarity (RapidFuzz)
+
+**Model Accuracy:** **95%**
+
+---
+
+## 📊 Application Modules
+
+* Home
+* User Profile
+* Data Upload
+* Dashboard
+* Reconciliation Engine
+* Insights
+* History
+* Search & Filter
+* Reports & Export
+
+---
+
+## ▶️ Installation
+
+Clone the repository:
+
+```bash
 git clone https://github.com/hrithika2005119/Bank-Statement-Reconciliation.git
+```
 
+Navigate to the project folder:
+
+```bash
 cd Bank-Statement-Reconciliation
+```
 
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
 
+Run the application:
+
+```bash
 streamlit run app.py
-📈 Future Enhancements
-Real-time Bank API integration
-Deep Learning-based transaction matching
-Fraud detection module
-Multi-user authentication
-Cloud deployment with database support
-👩‍💻 Author
+```
 
-Hrithika V
+---
+
+## 📈 Future Enhancements
+
+* Real-time bank API integration
+* AI-powered transaction matching
+* Fraud detection module
+* Multi-user authentication
+* Cloud deployment with database support
+
+---
+
+## 👩‍💻 Author
+
+**Hrithika V**
+
 B.Sc. Computer Science (Artificial Intelligence & Data Science)
 
-📄 License
+Interested in **Data Science, Machine Learning, Artificial Intelligence, and Data Analytics**.
 
-This project is developed for academic and educational purposes.
+---
+
+## 📄 License
+
+This project was developed for **academic and educational purposes**.
+
